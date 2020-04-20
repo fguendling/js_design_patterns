@@ -48,12 +48,21 @@ will eventually be written in JavaScript“*
 @img[shadow](assets/img/conference.png)
 @snapend
 
----
 
 
-### Creational
 
-![IMAGE](assets/img/presentation.png)
+---?image=assets/img/factory.jpg&size=cover&opacity=20
+### Creational Patterns 
+#### (Erzeugungsmuster)
+
+---?image=assets/img/structural.jpg&size=cover&opacity=20
+### Structural Patterns 
+#### (Strukturmuster)
+
+---?image=assets/img/Behavioural.jpg&size=cover&opacity=20
+### Behavioural Patterns 
+#### (Verhaltensmuster)
+
 
 ---?color=linear-gradient(180deg, white 75%, black 25%)
 @title[Customize Slide Layout]
