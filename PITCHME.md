@@ -1,8 +1,10 @@
 ## JavaScript  
 ## **Design Patterns**
 
+
 ---
-### Motivation
+
+
 
 *„Any application that can be written in JavaScript, 
 will eventually be written in JavaScript“*   
@@ -11,7 +13,45 @@ will eventually be written in JavaScript“*
 ---
 
 
-### Add Some Slide Candy
+@snap[west span-30]
+![IMAGE](assets/img/book_js_patterns.png)
+@snapend
+
+@snap[midpoint span-30 ]
+![IMAGE](assets/img/book_head_first.jpg)
+@snapend
+
+@snap[east span-30]
+![IMAGE](assets/img/book_design_patterns.jpg)
+@snapend
+
+
+---
+@title[Add A Little Imagination]
+
+@snap[span-50 west]
+## ***Why & When*** 
+@snapend
+
+@snap[east span-55]
+@ul[list-spaced-bullets text-09]
+- To build  **maintainable** systems  
+- To have a shared vocabulary
+- In OO-oriented Worlds   
+
+@ulend
+@snapend
+
+
+
+@snap[south span-100 bg-black fragment]
+@img[shadow](assets/img/conference.png)
+@snapend
+
+---
+
+
+### Creational
 
 ![IMAGE](assets/img/presentation.png)
 
@@ -31,30 +71,7 @@ Snap Layouts let you create custom slide designs directly within your markdown.
 @snapend
 
 ---
-@title[Add A Little Imagination]
 
-@snap[north-west span-50 text-center]
-#### Engage your Audience
-@snapend
-
-@snap[west span-55]
-@ul[list-spaced-bullets text-09]
-- You will be amazed
-- What you can achieve
-- With a **little imagination**
-- And GitPitch Markdown
-@ulend
-@snapend
-
-@snap[east span-45]
-![IMAGE](assets/img/conference.png)
-@snapend
-
-@snap[south span-100 bg-black fragment]
-@img[shadow](assets/img/conference.png)
-@snapend
-
----
 
 @snap[north-east span-100 text-pink text-06]
 Let your code do the talking!
