@@ -1,17 +1,18 @@
-## JavaScript  
+## JavaScript
+
 ## **Design Patterns**
 
+@snap[south span-200 text-10]
+Autor: *Felix Gündling*
+@snapend
 
 ---
 
+_„Any application that can be written in JavaScript,
+will eventually be written in JavaScript“_
 
-
-*„Any application that can be written in JavaScript, 
-will eventually be written in JavaScript“*   
-
--- Atwood’s Law (2007)
+### Atwood’s Law (2007)
 ---
-
 
 @snap[west span-30]
 ![IMAGE](assets/img/book_js_patterns.png)
@@ -25,93 +26,119 @@ will eventually be written in JavaScript“*
 ![IMAGE](assets/img/book_design_patterns.jpg)
 @snapend
 
-
 ---
+
 @title[Add A Little Imagination]
 
 @snap[span-50 west]
-## ***Why & When*** 
+
+## **_Why & When_**
+
 @snapend
 
 @snap[east span-55]
 @ul[list-spaced-bullets text-09]
-- To build  **maintainable** systems  
+
+- To build **maintainable** systems
 - To have a shared vocabulary
-- In OO-oriented Worlds   
+- In OO-oriented Worlds
 
 @ulend
 @snapend
 
 
 
-@snap[south span-100 bg-black fragment]
-@img[shadow](assets/img/conference.png)
-@snapend
-
-
-
-
 ---?image=assets/img/factory.jpg&size=cover&opacity=20
-### Creational Patterns 
+
+### Creational Patterns
+
 #### (Erzeugungsmuster)
-
----?image=assets/img/structural.jpg&size=cover&opacity=20
-### Structural Patterns 
-#### (Strukturmuster)
-
----?image=assets/img/Behavioural.jpg&size=cover&opacity=20
-### Behavioural Patterns 
-#### (Verhaltensmuster)
-
-
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
-
-@snap[west span-55]
-## Customize the Layout
-@snapend
-
-@snap[north-east span-45]
-![IMAGE](assets/img/presentation.png)
-@snapend
-
-@snap[south span-100]
-Snap Layouts let you create custom slide designs directly within your markdown.
-@snapend
 
 ---
 
-
 @snap[north-east span-100 text-pink text-06]
-Let your code do the talking!
+Set-Up
 @snapend
 
-```sql zoom-18
-CREATE TABLE "topic" (
-    "id" serial NOT NULL PRIMARY KEY,
-    "forum_id" integer NOT NULL,
-    "subject" varchar(255) NOT NULL
-);
-ALTER TABLE "topic"
-ADD CONSTRAINT forum_id
-FOREIGN KEY ("forum_id")
-REFERENCES "forum" ("id");
+```javascript 
+var mySingleton = (function () {
+    var instance;
+    function init() {
+        var privateRandomNumber = Math.random();
+        return {
+            getRandomNumber: function () {
+                return privateRandomNumber;
+            }
+        };
+    }
+  return {
+      getInstance: function () {
+          if (!instance) { instance = init(); }
+          return instance;
+      },
+  };
+})();
 ```
 
 @snap[south span-100 text-gray text-08]
-@[1-5](You can step-and-ZOOM into fenced-code blocks, source files, and Github GIST.)
-@[6,7, zoom-13](Using GitPitch live code presenting with optional annotations.)
-@[8-9, zoom-12](This means no more switching between your slide deck and IDE on stage.)
+@[1-20]((immediately invoked function expression))
+@[11,12, zoom-13](Using GitPitch live code presenting with optional annotations.)
+@[13-19, zoom-12](This means no more switching between your slide deck and IDE on stage.)
 @snapend
 
-
----?image=assets/img/code.jpg&opacity=60&position=left&size=45% 100%
-
-@snap[east span-50 text-center]
-## Now It's **Your** Turn
+---
+@snap[north-east span-100 text-pink text-06]
+Test-Drive
 @snapend
 
-@snap[south-east span-50 text-center text-06]
-[Download GitPitch Desktop @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
-@snapend
+```js
+function getInstanceOfSingleton_1() {
+  var singleA = mySingleton.getInstance();
+  console.log("Object created. It random number is:");
+  console.log(singleA.getRandomNumber());
+}
 
+function getInstanceOfSingleton_2() {
+  var singleB = mySingleton.getInstance();
+  console.log("Object created. It random number is:");
+  console.log(singleB.getRandomNumber());
+}
+```
+
+
+---?image=assets/img/structural.jpg&size=cover&opacity=20
+
+### Structural Patterns
+
+#### (Strukturmuster)
+
+---
+
+Decorator goes here
+
+---?image=assets/img/Behavioural.jpg&size=cover&opacity=20
+
+### Behavioural Patterns
+
+#### (Verhaltensmuster)
+
+---
+
+Observer goes here
+
+---?image=assets/img/mvc_background_copy.jpg&size=cover&opacity=15
+
+### Compound Patterns
+
+#### (Zusammengesetzte Muster)
+
+---
+
+MVC goes here
+
+---
+
+@snap[text-center]
+
+
+![height=400](assets/img/thatsall.jpeg)

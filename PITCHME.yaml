@@ -64,13 +64,13 @@ thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
 
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
 theme            : template
-theme-background : [ "#000000" ]
-theme-headline   : [ "Montserrat", "#FBD95E", "none", "#FFFFFF", "100", "120", "15" ]
-theme-byline     : [ "Raleway", "#FFFFFF", "none", "#FBD95E", "100", "110", "15" ]
-theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#A0C865", "100", "100", "15" ]
+theme-background : [ "#323437" ]
+theme-headline   : [ "Montserrat", "#82F2A0", "none", "#FFFFFF", "100", "120", "15" ]
+theme-byline     : [ "Raleway", "#FFFFFF", "none", "#82F2A0", "100", "110", "15" ]
+theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#F9F871", "100", "100", "15" ]
 theme-links      : [ "#F1C40F", "#5254F7" ]
-theme-code       : [ "Source Code Pro", "100", "120" ]
-highlight        : tomorrow
+theme-code       : [ "Fira Code", "80", "140" ]
+highlight        : hybrid
 theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
 logo             : assets/img/syntegris.png
